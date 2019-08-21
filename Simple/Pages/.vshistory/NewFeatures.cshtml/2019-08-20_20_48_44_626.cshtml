@@ -1,0 +1,14 @@
+@page
+@model Simple.Pages.NewFeaturesModel
+@{
+    ViewData["Title"] = "NewFeatures";
+}
+
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+
+<h1>Authorized users only!<h1>
+
+<p>Hello @User.Identity.Name. You are authorized!</p>
+
+<h1>NewFeatures</h1>
+
